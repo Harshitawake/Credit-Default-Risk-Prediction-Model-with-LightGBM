@@ -16,6 +16,7 @@ This project aims to predict the probability of credit default using a LightGBM 
   - [Model Training](#model-training)
   - [Model Evaluation](#model-evaluation)
   - [SHAP Analysis](#shap-analysis)
+  - [Hyperparameter Tuning](#hyperparameter-tuning)
 - [Why LightGBM?](#why-lightgbm)
 - [Results](#results)
 - [Usage](#usage)
@@ -109,6 +110,16 @@ SHAP (SHapley Additive exPlanations) was used to interpret the model's predictio
 2. **Model Transparency:** Provides insights into how the model makes decisions, enhancing trust in the model.
 3. **Feature Impact:** Visualizes the impact of each feature on the prediction, allowing for better model diagnostics.
 
+### Hyperparameter Tuning
+
+Hyperopt was used for hyperparameter tuning to optimize the LightGBM model. Hyperopt is a powerful library for hyperparameter optimization, offering several advantages over traditional methods like Grid Search CV.
+
+#### Benefits of Hyperopt:
+
+1. **Efficiency:** Hyperopt uses a combination of random search and Bayesian optimization to efficiently explore the hyperparameter space.
+2. **Scalability:** It can handle a large number of hyperparameters and complex search spaces more effectively than Grid Search CV.
+3. **Performance:** Often results in better model performance due to its ability to find optimal hyperparameter configurations more effectively.
+
 ## Why LightGBM?
 
 LightGBM was chosen for this project due to several reasons:
@@ -129,5 +140,5 @@ To use this model:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Harshitawake/Credit-Default-Risk-Prediction-Model-with-LightGBM.git
+   git clone https://github.com/yourusername/Credit-Default-Risk-Prediction-Model.git
    cd Credit-Default-Risk-Prediction-Model
